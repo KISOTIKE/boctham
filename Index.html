@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bốc thăm chia đội đá nội bộ KISOTIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bốc thăm chia đội đá nội bộ KISOTIKE</h1>
+
+    <div id="admin-section">
+        <label>Thời gian thi đấu (ngày, giờ): </label>
+        <input type="text" id="match-time" placeholder="Ví dụ: 18h00 ngày 09/10/2024">
+        <br><br>
+        <label>Địa điểm thi đấu: </label>
+        <input type="text" id="match-location" placeholder="Ví dụ: Sân bóng đá sinh thái Vĩnh Hưng">
+        <br><br>
+        <label>Nhập cặp 2 người (cách nhau bởi dấu phẩy): </label>
+        <input type="text" id="people-input" placeholder="Ví dụ: Dũng, Mạnh">
+        <br><br>
+        <button onclick="saveData()">Lưu thông tin</button>
+        <br><br>
+
+        <h3>Kết quả hiện tại:</h3>
+        <div id="match-info"></div>
+        <table id="result-table" border="1">
+            <thead>
+                <tr>
+                    <th>Xanh</th>
+                    <th>Cam</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <button onclick="resetLottery()">Reset Kết quả</button>
+    </div>
+
+    <div id="user-section">
+        <h2>Người dùng bốc thăm</h2>
+        <label>Chọn cặp người:</label>
+        <select id="pair-select">
+            <option value="" disabled selected>Chọn cặp</option>
+        </select>
+        <br><br>
+        <button onclick="spinLottery()">Quay xổ số</button>
+        <br><br>
+        <h3>Kết quả:</h3>
+        <div id="user-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
