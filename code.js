@@ -2,7 +2,7 @@ let pairs = [];
 let results = {};
 let matchTime = '';
 let matchLocation = '';
-const colors = ["Xanh", "Cam"];
+const colors = ["Xanh", "Vàng"];
 
 // Lưu thông tin cặp người và màu từ Admin
 function saveData() {
@@ -122,3 +122,4 @@ function resetLottery() {
     updateResultTable(); // Cập nhật lại bảng kết quả
     alert("Kết quả đã được reset!");
 }
+
